@@ -22,6 +22,7 @@ class App extends Component {
     e.preventDefault();
     const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
     const response = await apiCall.json();
+    console.log(response.weather[0].main)
     if(city && response.main !== undefined){
       this.setState({
         temperature: response.main.temp,
@@ -38,9 +39,21 @@ class App extends Component {
     }
   }
   render() {
-    let conditionalClassName = 'App'
-  if(this.state.temperature > 20){
-    conditionalClassName = 'App-warm'
+  console.log(this.state.weather)
+  console.log(this.state.weather);
+  let conditionalClassName = 'App'
+  if(this.state.weather === 'Clear'){
+    conditionalClassName = 'App-clear'
+  } else if (this.state.weather === 'Sunny' || (this.state.weather === 'Clear' && this.state.temperature > 20)){
+    conditionalClassName = 'App-sun'
+  }else if (this.state.weather === 'Clouds'){
+    conditionalClassName = 'App-clouds'
+  }else if (this.state.weather === 'Rain'){
+    conditionalClassName = 'App-rain'
+  }else if (this.state.weather === 'Mist'){
+    conditionalClassName = 'App-mist'
+  }else{
+    conditionalClassName = 'App'
   }
     return (
       <div className={conditionalClassName} >

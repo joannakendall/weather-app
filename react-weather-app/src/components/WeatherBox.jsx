@@ -14,6 +14,7 @@ const WeatherBox = (props) => {
         return `${day} ${date} ${month} ${year}`
     
       }
+      console.log(props.weather)
     return (
         <div className={styled.div}>
             {props.icon && <img className={styled.img} src= {`http://openweathermap.org/img/w/${props.icon}.png`} alt= 'weather icon'/>}
