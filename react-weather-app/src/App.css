@@ -23,7 +23,7 @@
 .App-clear{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  background-image: url('./backgrounds/clear.jpg');
+  background-image: url('./backgrounds/sun.jpg');
   background-size: cover;
   background-position: bottom;
 }
@@ -41,7 +41,17 @@
   background-size: cover;
   background-position: bottom;
 }
+.App-snow{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: url('./backgrounds/snow.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
 
+body, html {
+  height: 100%;
+}
 
 
 /* 

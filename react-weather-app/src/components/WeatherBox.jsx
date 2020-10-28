@@ -17,12 +17,12 @@ const WeatherBox = (props) => {
       console.log(props.weather)
     return (
         <div className={styled.div}>
+            {props.error && <p className={styled.error}>{props.error}</p>}  
             {props.icon && <img className={styled.img} src= {`http://openweathermap.org/img/w/${props.icon}.png`} alt= 'weather icon'/>}
             {props.city && <p className={styled.location}>{props.city}, {props.country}</p>}
             <p className={styled.date}>{dateBuilder(new Date())}</p>
             {props.weather && <p className={styled.weather}>{props.weather}</p>}  
-            {props.temperature && <p className={styled.temp}>{Math.round(props.temperature)}°C</p>}         
-            {props.error && <p className={styled.error}>{props.error}</p>}       
+            {props.temperature && <p className={styled.temp}>{Math.round(props.temperature)}°C</p>}              
         </div>
     );
 };
