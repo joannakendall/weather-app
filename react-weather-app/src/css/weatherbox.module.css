@@ -1,0 +1,51 @@
+.location{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  }
+  
+.date{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5)
+  }
+  
+  .div{
+    text-align: center;
+  }
+  
+.temp{
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+  
+    padding: 15px 25px;
+  
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 600;
+  
+    text-shadow: rgba(50, 50, 70, 0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+.weather{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    margin: 10px auto;
+  } 
+
+.img{
+    max-width:100%;
+    height:100px;
+}
