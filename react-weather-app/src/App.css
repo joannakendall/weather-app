@@ -1,4 +1,5 @@
 .App {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #b1bfd8;
   background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
@@ -6,6 +7,7 @@
   background-position: bottom;
 }
 .App-warm{
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #fc9842;
   background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
